@@ -11,12 +11,15 @@ namespace MohawkGame2D
     public class Game
     {
         Player p1 = new Player();
+        Sounds sounds = new Sounds();
         public void Setup()
         {
             Window.SetTitle("GitHub Branches Test");
             Window.SetSize(800, 600);
 
             p1.Setup();
+
+            sounds.Setup();
         }
 
 
