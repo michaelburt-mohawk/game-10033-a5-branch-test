@@ -10,20 +10,21 @@ namespace MohawkGame2D
     /// </summary>
     public class Game
     {
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
+        Player p1 = new Player();
         public void Setup()
         {
+            Window.SetTitle("GitHub Branches Test");
+            Window.SetSize(800, 600);
 
+            p1.Setup();
         }
 
-        /// <summary>
-        ///     Update runs every frame.
-        /// </summary>
+
         public void Update()
         {
+            Window.ClearBackground(Color.White);
 
+            p1.Update();
         }
     }
 
